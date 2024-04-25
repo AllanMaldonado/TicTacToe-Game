@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #141414;
+    --center-box-color: #0E0E0E;
+    --boxes-color: #333333;
+    --font-color: #f1f5f9;
+    --p2-color: #6100FF;
+    --p1-color: #FF3939;
+}
+
+body {
+    background-color: var(--bg-color);
+
+}
+#Section{
+    max-width: 35rem;
+    max-height: 35rem;
+}
+
+main {
+    background-color: var(--center-box-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 35rem;
+    height: 40rem;
+    margin-top: 2rem;
+    padding: 0 3rem 3rem;
+    border: 2rem solid var(--center-box-color);
+    border-radius: 9%;
+    position: relative;
+    color: var(--font-color);
+
+}
+
+#Form-Players {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#Player {
+    display: flex;
+    gap: 1rem;
+}
+
+#PlayerV2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+}
+
+#play {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+ 
+#VS {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6rem;
+    margin-top: 3rem;
+
+}
+
+#isX {
+    color: var(--p1-color);
+    min-width: 7rem;
+    min-height: 7rem;
+    max-width: 7rem;
+    max-height: 7rem;
+    font-family: "Autour One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0.2rem;
+    border: none;
+    border-width: 2px;
+    border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+
+
+    border-width: 2px;
+    outline: none;
+    transition: 0.15s;
+
+    font-size: 5rem;
+
+    width: 100%;
+    height: 100%;
+}
+
+#isO {
+    color: var(--p2-color);
+    min-width: 7rem;
+    min-height: 7rem;
+    max-width: 7rem;
+    max-height: 7rem;
+    font-family: "Autour One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0.2rem;
+    border: none;
+    border-width: 2px;
+    border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+
+
+    border-width: 2px;
+    outline: none;
+    transition: 0.15s;
+
+    font-size: 5rem;
+
+    width: 100%;
+    height: 100%;
+}
+
+#spaces-buttons {
+
+    min-width: 7rem;
+    min-height: 7rem;
+    max-width: 7rem;
+    max-height: 7rem;
+    font-family: "Autour One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0.2rem;
+    border: none;
+    background-color: var(--boxes-color);
+    border-width: 2px;
+    border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+
+
+    border-width: 2px;
+    outline: none;
+    transition: 0.15s;
+
+    font-size: 5rem;
+
+    width: 100%;
+    color:#f1f5f9;
+
+    height: 100%;
+}
+
+#spaces-buttons:active {
+    background-color: #f1f5f9;
+    transition: 0.15s;
+}
+
+#playBoxes {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+h1 {
+    font-family: "Autour One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 2rem;
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+
+}
+#Empate{
+    margin-bottom:0rem !important;
+}
+
+h2 {
+    font-family: "Autour One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 3rem;
+}
+#Empate{
+    margin-right: 1rem;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+}
+.voltarBtn{
+    background-image: linear-gradient(to right, #FF3939, #6100FF);
+    background-color: #6100FF;
+    border: none;
+
+    border-radius: 1em;
+    font-weight: 700;
+    padding: 0.5rem 1rem 0.5rem ; 
+    margin-top: 0.5rem;
+    transition: 0.15s;
+    color: var(--font-color);
+    font-size: 1.5rem;
+    margin-left: 10rem;
+    margin-right: 6rem;
+
+    transition: 1s;
+}
+input {
+    font-family: "Autour One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid var(--bg-color);
+    border-radius: 0.5rem;
+    color: var(--font-color);
+    display: block;
+    font-size: 1.75rem;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+#P1-name {
+    background-color: var(--p1-color);
+}
+
+
+
+.victory {
+    background-image: linear-gradient(to right, #FF3939, #6100FF);
+    color:#f1f5f9!important;
+
+    min-width: 7rem;
+    min-height: 7rem;
+    max-width: 7rem;
+    max-height: 7rem;
+
+    font-family: "Autour One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0.2rem;
+    border: none;
+    border-width: 2px;
+    border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+
+
+    border-width: 2px;
+    outline: none;
+    transition: 0.15s;
+
+    font-size: 5rem;
+
+    width: 100%;
+    height: 100%;
+}
+
+#P2-name {
+    background-color: var(--p2-color);
+}
+
+.P1-class-animation {
+    background-color: var(--p1-color);
+    border: #f1f5f9;
+    animation: pulso infinite 0.5s linear;
+    border: 3px solid #f1f5f9;
+    text-align: center;
+}
+
+.P2-class-animation {
+    background-color: var(--p2-color);
+    border: #f1f5f9;
+    animation: pulso infinite 0.5s linear;
+    border: 3px solid #f1f5f9;
+    text-align: center;
+}
+
+@keyframes pulso {
+    0% {
+        border-width: 3px;
+    }
+
+    50% {
+        border-width: 4px;
+    }
+
+    100% {
+        border-width: 3px;
+    }
+}
+
+#Start {
+    background-image: linear-gradient(to right, #FF3939, #6100FF);
+    background-color: #6100FF;
+    border: none;
+    border-radius: 1em;
+    font-weight: 700;
+    padding: 1rem 1rem;
+    transition: 0.15s;
+    color: var(--font-color);
+    font-size: 1.75rem;
+    margin-left: 8rem;
+    margin-right: 6rem;
+    margin-top: 2rem;
+
+    transition: 1s;
+}
+#Start2 {
+    background-image: linear-gradient(to right, #FF3939, #6100FF);
+    background-color: #6100FF;
+    border: none;
+    border-radius: 1em;
+    font-weight: 700;
+    padding: 1rem 1rem;
+    transition: 0.15s;
+    color: var(--font-color);
+    font-size: 1.75rem;
+    margin-left: 8rem;
+    margin-right: 6rem;
+    margin-top: 2rem;
+
+    transition: 1s;
+}
+#XV2 {
+    margin-top: 2rem;
+    color: var(--p1-color);
+}
+
+#OV2 {
+    margin-top: 2rem;
+    color: var(--p2-color);
+}
